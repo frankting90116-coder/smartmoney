@@ -47,8 +47,19 @@
   </style>
 </head>
 <body>
+  <header style="position:fixed;top:0;left:0;width:100%;background:#0a1a3f;color:white;padding:15px 0;z-index:1000;box-shadow:0 2px 10px rgba(0,0,0,0.3);">
+    <div style="max-width:1100px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;padding:0 20px;">
+      <span style="font-size:22px;font-weight:bold;letter-spacing:1px;">SmartMoney</span>
+      <nav>
+        <a href="#idea" style="color:white;margin:0 12px;text-decoration:none;font-size:16px;">創業理念</a>
+        <a href="#features" style="color:white;margin:0 12px;text-decoration:none;font-size:16px;">主要功能</a>
+        <a href="#team" style="color:white;margin:0 12px;text-decoration:none;font-size:16px;">團隊成員</a>
+        <a href="#contact" style="color:white;margin:0 12px;text-decoration:none;font-size:16px;">聯絡我們</a>
+      </nav>
+    </div>
+  </header>
   <!-- Hero 區塊 -->
-  <section style="background:#0a1a3f;color:white;padding:80px 20px;text-align:center;">
+  <section style="margin-top:90px;" style="background:#0a1a3f;color:white;padding:80px 20px;text-align:center;">
     <h1 style="font-size:48px;margin-bottom:10px;">SmartMoney</h1>
     <p style="font-size:20px;opacity:0.9;">你的智慧理財助手，讓金錢開始為你工作</p>
     <button style="margin-top:25px;padding:12px 35px;font-size:18px;background:white;color:#0a1a3f;border-radius:30px;border:none;cursor:pointer;">開始使用</button>
@@ -56,13 +67,13 @@
 
   <!-- 主內容 Container -->
   <div class="container">
-    <h2>創業理念</h2>
+    <h2 id="idea">創業理念</h2>
     <div class="highlight-box">
       <p>理財不只是記帳，而是讓金錢為你工作。</p>
       <p>SmartMoney 致力於透過直覺化工具，讓用戶自動化管理財務並提升財務自由。</p>
     </div>
 
-    <h2>主要功能</h2>
+    <h2 id="features">主要功能</h2>
     <div style="display:flex;gap:20px;flex-wrap:wrap;">
       <div style="flex:1;min-width:250px;background:#e8ecf5;padding:20px;border-radius:10px;">
         <h3>📊 自動記帳</h3>
@@ -78,7 +89,7 @@
       </div>
     </div>
 
-    <h2>團隊成員</h2>
+    <h2 id="team">團隊成員</h2>
     <div style="display:flex;gap:20px;flex-wrap:wrap;">
       <div style="flex:1;min-width:200px;background:#e8ecf5;padding:15px;border-radius:10px;border-left:5px solid #0a1a3f;">
         <h3>王育成 — 技術開發</h3>
@@ -98,7 +109,7 @@
       </div>
     </div>
 
-    <h2>聯絡我們</h2>
+    <h2 id="contact">聯絡我們</h2>
     <p>Email：info@smartmoney.com</p>
     <p>地址：台北市中正區某某路 123 號</p>
   </div>
